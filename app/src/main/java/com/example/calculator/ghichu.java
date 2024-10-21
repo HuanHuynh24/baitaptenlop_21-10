@@ -20,7 +20,7 @@ public class ghichu {
     }
     public  String get() {
         SharedPreferences sharedPreferences = context.getSharedPreferences("Ghichu", Context.MODE_PRIVATE);
-        String ghichu =  sharedPreferences.getString("Ghichumoi", null);
+        String ghichu =  sharedPreferences.getString("Ghichumoi", "xin chao");
         return  ghichu;
     }
 }
