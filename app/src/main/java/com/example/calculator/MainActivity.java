@@ -23,12 +23,12 @@ Button btnn;
         hienthighichu = findViewById(R.id.layghichu);
         btnn = findViewById(R.id.btn);
         init();
-        ghichu ghichu = new ghichu(this);
-        ghichu.save(ghichumoi.getText().toString());
         btnn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 ghichu ghichu = new ghichu(MainActivity.this);
+                ghichu.save(ghichumoi.getText().toString());
                 hienthighichu.setText(ghichu.get());
             }
         });
